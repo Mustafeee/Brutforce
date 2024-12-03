@@ -1,22 +1,22 @@
 # Brutforce
 
 ## maarka hore la dag
-
-( git clone https://github.com/Mustafeee/Brutforce.git )
-
+```python
+ git clone https://github.com/Mustafeee/Brutforce.git 
+```
 ## pipka la dag
-
-( pip install colorama )
-
+```python
+pip install colorama 
+```
 ## marka kalena directionka sax
 
-
-( cd Brutforce )
-
+```python
+ cd Brutforce 
+```
 
 ## kadibna kici
 
-
-( python Brutforce.py )
-
+```python
+python Brutforce.py 
+```
 
