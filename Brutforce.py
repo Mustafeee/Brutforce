@@ -1,20 +1,15 @@
-from colorama import Fore, Style, init
 
-# Initialize Colorama
-init(autoreset=True)
-
-# Print the ASCII art in red
 print(Fore.RED + """
 ______
      .-'      `-.
     /            \\
    |,  .-.  .-.  ,|
-   | )(_o/  \o_)( |
-   |/     /\     \|
+   | )(_o/  \\o_)( |
+   |/     /\\     \\|
    (_     ^^     _)
-    \__|IIIIII|__/
-     | \IIIIII/ |
-     \          /
+    \\__|IIIIII|__/
+     | \\IIIIII/ |
+     \\          /
       `--------`
 
       ██████  █████  ██ ███    ██ ██   ██ 
@@ -23,8 +18,6 @@ ______
      ██      ██   ██ ██ ██  ██ ██ ██  ██  
       ██████ ██   ██ ██ ██   ████ ██   ██
 """)
-
-# Rest of the script
 print("============================")
 print("💀 Brute Force Attack - Created By Pop-smoKE ☠️")
 print("============================")
