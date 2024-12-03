@@ -10,4 +10,4 @@ git clone https://github.com/Mustafeee/Brutforce.git
 
 kadibna kici
 
-"python Brutforce.py"
+"python Brutforce.py
