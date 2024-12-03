@@ -1,4 +1,9 @@
+from colorama import Fore, Style, init  # Import the required modules
 
+# Initialize Colorama
+init(autoreset=True)
+
+# Print the ASCII art with color
 print(Fore.RED + """
 ______
      .-'      `-.
@@ -15,31 +20,32 @@ ______
 
       CODED BY PAIN AND ROHAN AND POP-SMOKE 
 """)
+
 print("============================")
-print("💀 Brute Force Attack - Created By Pop-smoKE ☠️")
+print(Fore.GREEN + "💀 Brute Force Attack - Created By Pop-smoKE ☠️")
 print("============================")
 
 # Prompt for user input
-target_id = input("Enter target ID: ")
-username = input("Enter target username: ")
-wordlist_file = input("Enter wordlist file path: ")
+target_id = input(Fore.CYAN + "Enter target ID: ")
+username = input(Fore.CYAN + "Enter target username: ")
+wordlist_file = input(Fore.CYAN + "Enter wordlist file path: ")
 
-print("\nStarting Brute Force Attack...\n")
+print(Fore.YELLOW + "\nStarting Brute Force Attack...\n")
 
 # Try to read and process the wordlist
 try:
     with open(wordlist_file, "r") as file:
         for password in file:
             password = password.strip()  # Remove newline characters
-            print(f"Trying password: {password} for username: {username}")
+            print(Fore.MAGENTA + f"Trying password: {password} for username: {username}")
             # You can add your login logic here
             # Example:
             # if login(username, password):
-            #     print(f"\nPassword found: {password}")
+            #     print(Fore.GREEN + f"\nPassword found: {password}")
             #     break
         else:
-            print("\nBrute Force Attack finished - No password found.")
+            print(Fore.RED + "\nBrute Force Attack finished - No password found.")
 except FileNotFoundError:
-    print("\nError: Wordlist file not found. Please check the file path.")
+    print(Fore.RED + "\nError: Wordlist file not found. Please check the file path.")
 except Exception as e:
-    print(f"\nAn error occurred: {e}")
+    print(Fore.RED + f"\nAn error occurred: {e}")
